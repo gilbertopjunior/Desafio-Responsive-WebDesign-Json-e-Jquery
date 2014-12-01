@@ -1,17 +1,7 @@
 /* Created on: 20/06/2014, 10:09:15
 Author:Gilberto */
-/* Imports and Fonts */
-
-@import "elements.less";
 /* --------------------- Standards --------------------- */
 
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'lucida_sansregular';
     src: url('../fonts/lsans-webfont.eot');
@@ -26,27 +16,24 @@ Author:Gilberto */
     font-weight: normal;
     font-style: normal;
 }
-html, button, input, select, textarea {
-    color: #222;
+/* Mixins, Variables LESS */
+
+.transition-duration(@duration: 0.2s) {
+    -moz-transition-duration: @duration;
+    -webkit-transition-duration: @duration;
+    -o-transition-duration: @duration;
+    transition-duration: @duration;
 }
-html {
-    font-size: 100%
+.box-shadow(@arguments) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
 }
-body {
-    margin: 0;
-    font-family: 'lucida_sansregular', tahoma, verdana, arial, sans-serif;
-    color: #333;
-}
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
+@lucida: 'lucida_sansregular', sans-serif;
+@lucidaBold: 'lucida_sansdemibold_roman', sans-serif;
+@glyphi: 'Glyphicons Halflings';
+/* LESS - END */
+
 a {
     text-decoration: none;
 }
@@ -56,7 +43,11 @@ ul li {
     padding: 0;
 }
 p {
-    font-size: 0.875em;
+    font-size: 1em;
+}
+img {
+    max-width: 100%;
+    /*For responsive images*/
 }
 .container {
     max-width: 1026px;
@@ -74,9 +65,8 @@ p {
 .btn {
     padding: 10px 20px !important;
     font-size: 1.063em !important;
-    -webkit-box-shadow: 0px 3px 0px 0px rgba(68, 157, 68, 1);
-    -moz-box-shadow: 0px 3px 0px 0px rgba(68, 157, 68, 1);
-    box-shadow: 0px 3px 0px 0px rgba(68, 157, 68, 1);
+    font-size: 1.2em !important;
+    .box-shadow(0px 3px 0px 0px rgba(68, 157, 68, 1));
     &:hover {
         .transition-duration(0.6s);
     }
@@ -140,9 +130,9 @@ p {
         }
     }
 }
-/* --------------------- Sections --------------------- */
+/* ------------------ main content ------------------- */
 
-main {
+.main-container {
     text-align: center;
     h1 {
         margin: 60px 0 30px 0;
@@ -152,25 +142,30 @@ main {
         font-size: 1.375em;
     }
 }
+/* --------------------- sections --------------------- */
+/* features and benefits */
+
 .features {
     ul {
         padding-left: 0 !important;
     }
     h2, p, a {
         padding-left: 32px;
-        font-family: 'lucida_sansregular', sans-serif;
+        font-family: @lucida;
     }
     h2 {
         font-size: 1.125em;
-        font-family: 'lucida_sansdemibold_roman', sans-serif;
+        font-family: @lucidaBold;
         margin-bottom: 5px !important;
     }
     p {
         color: #666;
+        margin-bottom: 0;
     }
     a {
         color: #ed8525 !important;
         text-decoration: none;
+        font-size: 0.850em;
         &:hover {
             color: #FFA949 !important;
             text-decoration: none;
@@ -181,7 +176,7 @@ main {
         font-size: 1.4em;
     }
     .list-features, .list-benefits {
-        font-family: "Glyphicons Halflings";
+        font-family: @glyphi;
     }
     .list-features {
         li:before {
@@ -196,6 +191,123 @@ main {
         }
     }
 }
+/* download e-book - collaboration */
+
+.collaboration {
+    h2 {
+        font-size: 1.3em;
+        font-family: @lucidaBold !important;
+    }
+    h3 {
+        font-size: 1em;
+        font-family: @lucidaBold !important;
+    }
+    p {
+        font-family: @lucida !important;
+    }
+    .header-collaboration {
+        text-align: center;
+        span {
+            color: #666;
+        }
+        h1 {
+            margin-top: 5px;
+            margin-bottom: 40px;
+        }
+    }
+    .details-book {
+        font-size: 0.875em;
+        i {
+            margin-top: 15px;
+            display: block;
+            padding-right: 13px;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1em;
+        }
+        a {
+            width: 100%;
+        }
+    }
+    .list-collaboration-alert {
+        padding-bottom: 20px;
+        margin-top: 20px;
+        .col-md-12:before {
+            content: none;
+        }
+        .separator {
+            margin-top: 20px;
+            border-bottom: dashed 1px #CCC;
+        }
+    }
+    .list-collaboration-alert, .list-collaboration-ok {
+        font-family: @glyphi;
+        h3 {
+            margin-top: 7px !important;
+        }
+        h3, p {
+            padding-left: 28px;
+        }
+    }
+    .list-collaboration-alert > div:before {
+        content: "\e107";
+        float: left;
+        color: #ff9900;
+        margin-top: -5px;
+        font-size: 1.3em;
+    }
+    .list-collaboration-ok > div:before {
+        content: "\e084";
+        float: left;
+        color: #006600;
+        margin-top: -5px;
+        font-size: 1.3em;
+    }
+}
+/*ratification by MEC*/
+
+.ratification {
+    .title {
+        text-align: center;
+        margin-top: 0 !important;
+        margin-bottom: 40px;
+    }
+    .ra-left {
+        a {
+            color: #ed8525 !important;
+            &:hover {
+                color: #FFA949 !important;
+                text-decoration: none;
+            }
+        }
+    }
+    .img-document {
+        text-align: center;
+        .selo {
+            position: absolute;
+            margin: 66px 0 0 -40px;
+        }
+    }
+    .btn {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .list-resolution {
+        border-left: 12px solid #0099CC;
+        padding-left: 25px;
+        margin-top: 30px;
+        li {
+            padding-bottom: 18px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+/*how to deploy a "ADE*/
+
 .implant-container {
     background: url('../img/gray-noise.gif');
     border: 1px solid #e3e3e3;
@@ -230,67 +342,3 @@ main {
         }
     }
 }
-/* --------------------- Media Queries --------------------- */
-/* Custom, iPhone Retina */
-
-@media only screen and (min-width: 320px) {
-    .title {
-        font-size: 2.2em;
-        font-family: 'lucida_sansdemibold_roman', tahoma, verdana, arial, sans-serif;
-    }
-    .subtitle {
-        font-size: 1.4em;
-        color: #666;
-        line-height: 1.3em;
-    }
-    .logo {
-        margin-left: 20px;
-    }
-    .search {
-        float: none;
-        margin: 20px 0 15px 0;
-        width: 98%;
-    }
-    nav a {
-        letter-spacing: 2px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .navbar-nav {
-        margin-bottom: 0 !important;
-    }
-    .nav > li {
-        border-bottom: 1px solid #0B8E8E;
-    }
-}
-/* Extra Small Devices, Phones */
-
-@media only screen and (min-width: 480px) {}
-/* Small Devices, Tablets */
-
-@media only screen and (min-width: 768px) {
-    .subtitle {
-        font-size: 1.5em;        
-        line-height: 1.4em;
-    }
-    .logo {
-        margin-left: 0;
-    }
-    .search {
-        float: left;
-        margin: 18px 0 0 30px;
-        width: 42%;
-    }
-    nav a {
-        text-transform: none;
-        letter-spacing: 0;
-        font-weight: normal;
-    }
-}
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) {}
-/* Large Devices, Wide Screens */
-
-@media only screen and (min-width: 1200px) {}

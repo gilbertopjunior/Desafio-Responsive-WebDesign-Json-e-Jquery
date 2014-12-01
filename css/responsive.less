@@ -1,0 +1,75 @@
+/* --------------------- Media Queries --------------------- */
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    .title {
+        font-size: 2.2em;
+        font-family: 'lucida_sansdemibold_roman', tahoma, verdana, arial, sans-serif;
+    }
+    .subtitle {
+        font-size: 1.4em;
+        color: #666;
+        line-height: 1.3em;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .search {
+        float: none;
+        margin: 20px 0 15px 0;
+        width: 98%;
+    }
+    nav a {
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .navbar-nav {
+        margin-bottom: 0 !important;
+    }
+    .nav > li {
+        border-bottom: 1px solid #0B8E8E;
+    }
+    .details-book {
+        background: url('../img/gray-noise.gif');
+        padding: 20px 0 30px 0;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .subtitle {
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .search {
+        float: left;
+        margin: 18px 0 0 30px;
+        width: 42%;
+    }
+    nav a {
+        text-transform: none;
+        letter-spacing: 0;
+        font-weight: normal;
+    }
+    .details-book {
+        padding: 0;
+        background: none;
+    }
+    .list-collaboration-alert > div:before, .list-collaboration-ok > div:before {
+        margin-top: 6px !important;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

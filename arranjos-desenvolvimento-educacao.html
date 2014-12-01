@@ -10,9 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet/less" type="text/css" href="css/main.less">
-    <link rel="stylesheet/less" type="text/css" href="css/elements.less">
+    <link rel="stylesheet/less" type="text/css" href="css/responsive.less">
     <link rel="stylesheet/less" type="text/css" href="css/bootstrap.min.css">
 
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -63,7 +65,8 @@
         </div>
     </header>
 
-    <main>
+    <!-- main content -->
+    <main class="main-container wow fadeInDown">
         <div class="container">
             <div class="row">
 
@@ -78,7 +81,7 @@
                 </div>
 
             </div>
-        </div>    
+        </div>
     </main>
 
     <div class="separator-container">
@@ -87,22 +90,22 @@
                 <div class="col-md-12">
                     <div class="separator">
                         <img src="img/logo-ade.svg" alt="Arranjo de Desenvolvimento da Educação">
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- features and benefits -->
     <section class="features">
         <div class="container">
             <div class="row">
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInLeft" data-wow-offset="300">
 
                     <h1 class="title blue">Características</h1>
                     <ul class="list-features">
                         <li>
-                            
                             <h2>Cooperação Horizontal</h2>
                             <p>O foco é a superação das desigualdades regionais através da cooperação entre diversos entes da sociedade, sem a definição de hierarquia.</p>
                         </li>
@@ -133,7 +136,7 @@
 
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight" data-wow-offset="300">
 
                     <h1 class="title purple">Benefícios</h1>
                     <ul class="list-benefits">
@@ -178,65 +181,79 @@
                 <div class="col-md-12">
                     <div class="separator">
                         <img src="img/logo-ade.svg" alt="Arranjo de Desenvolvimento da Educação">
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
-    <section class="grounding">
+    <!-- download e-book -->
+    <section class="collaboration">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 header-collaboration  wow fadeInDown" data-wow-offset="250">
                     <span>Fundamentação para a criação dos ADE`s</span>
-                    <h1 class="title">Homologação pelo MEC</h1>
+                    <h1 class="title">Regime de Colaboração <br>e Associativismo Territorial</h1>
                 </div>
-                <div class="col-md-4">
-                    <div class="img-book">
-                        <img src="img/book.png" alt="Regime de Colaboração e Associativismo Territorial">
-                    </div>
-                    <i> maior parte dos textos e informações contidas nesta página foram extraídas do livro "Regime de Colaboração e associativismo territorial" de Mozart Neves Ramos e Fernando Luiz Abrucio.</i>
-                    <p>O livro é disponibilizado gratuitamente.</p>
-                    <a href="" class="btn btn-success">Download do Livro</a>
-
-                </div>
-                <div class="col-md-8">
-                    <h2>Regime de Colaboração</h2>
-                    <p>O artigo 211 da Constituição Federal prevê que a União, os Estados, o Distrito Federal e os Municípios organizarão em regime de colaboração seus sistemas de ensino.</p>
-
-                    <p>Tal regime visa lidar com três difíceis questões do federalismo educacional brasileiro: pg 19/20</p>
-
+                <div class="col-xs-12 col-sm-4 col-md-3 details-book wow fadeIn" data-wow-offset="280">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h3>Sobreposição de governos</h3>
-                            <p>O regime busca garantir que nehum nível de governo se sobreponha a outro, mantendo a autonomia e a solidariedade entre os entes federativos.</p>
+                        <div class="col-xs-4 col-sm-12">
+                            <div class="img-book">
+                                <img src="img/book.png" alt="Regime de Colaboração e Associativismo Territorial">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <h3>Desigualdade territorial</h3>
-                            <p>As dieferenças entre regiões e municípios brasileiros é alta. Muitos municípios precisam de ajuda para atingir as metas educacionais. Aqui os regimes de colaboração tem ação suplementar à União e aos estados.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Duplicidade de Redes</h3>
-                            <p>É comum que alguns municípios convivam com redes municipais e estaduais no memso território. Isso exige a atuação do governo para garntir padrões de qualidade similar. Os regimes de colaboração podem estabelecer o diálogo necessário para o estabelecimento deste padrão.</p>
+                        <div class="col-xs-8 col-sm-12">
+                            <i>A maior parte dos textos e informações contidas nesta página foram extraídas do livro <b>"Regime de Colaboração e associativismo territorial"</b> de Mozart Neves Ramos e Fernando Luiz Abrucio.</i>
+                            <p>O livro é disponibilizado gratuitamente.</p>
+                            <a href="" class="btn btn-success wow zoomIn" data-wow-offset="150">Download do Livro</a>
                         </div>
                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    <div class="wow fadeIn" data-wow-offset="280">
+                        <h2>Regime de Colaboração</h2>
+                        <p>O artigo 211 da Constituição Federal prevê que a União, os Estados, o Distrito Federal e os Municípios organizarão em regime de colaboração seus sistemas de ensino.</p>
 
-                    <h2>Associativismo Territorial</h2>
-                    <p>O modelo de associativismo territorial corresponde a aliança formal ou informal entre governos que estejam em territórios contíguos. Os ADE`s são Regimes de Colaboração que seguem um modelo de Associativismo Territorial.</p>
-                    <p>A relevância deste modelo se deve principalmente a três aspectos:</p>
+                        <p>Tal regime visa lidar com três difíceis questões do federalismo educacional brasileiro: pg 19/20</p>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3>Além da jurisdição</h3>
-                            <p>Este modelo auxilia a resolução de problemas que vão além de uma única jurisdição, como cuidado com recursos hídricos, transportes metropolitanos ou obras em áreas de divisa.</p>
+                        <div class="row list-collaboration-alert">
+                            <div class="col-md-4">
+                                <h3>Sobreposição de governos</h3>
+                                <p>O regime busca garantir que nehum nível de governo se sobreponha a outro, mantendo a autonomia e a solidariedade entre os entes federativos.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Desigualdade territorial</h3>
+                                <p>As dieferenças entre regiões e municípios brasileiros é alta. Muitos municípios precisam de ajuda para atingir as metas educacionais. Aqui os regimes de colaboração tem ação suplementar à União e aos estados.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Duplicidade de Redes</h3>
+                                <p>É comum que alguns municípios convivam com redes municipais e estaduais no memso território. Isso exige a atuação do governo para garntir padrões de qualidade similar. Os regimes de colaboração podem estabelecer o diálogo necessário para o estabelecimento deste padrão.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="separator"></div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <h3>Divisão de tarefas</h3>
-                            <p>Permite a divisão de tarefas entre governos vizinhos, de modo que a união sirva para somar esforços em prol de um objetivo comum ou para distribuir atividades para os que têm melhor condição de excercê-la.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Projetos de Desenvolvimento Regional</h3>
-                            <p>Permite a alavancagem de atividades e setores que terão efeito agregado para todos os governos locais envolvidos.</p>
+                    </div>
+
+                    <div class="wow fadeIn" data-wow-offset="290">
+
+                        <h2>Associativismo Territorial</h2>
+                        <p>O modelo de associativismo territorial corresponde a aliança formal ou informal entre governos que estejam em territórios contíguos. Os ADE`s são Regimes de Colaboração que seguem um modelo de Associativismo Territorial.</p>
+                        <p>A relevância deste modelo se deve principalmente a três aspectos:</p>
+
+                        <div class="row list-collaboration-ok">
+                            <div class="col-md-4">
+                                <h3>Além da jurisdição</h3>
+                                <p>Este modelo auxilia a resolução de problemas que vão além de uma única jurisdição, como cuidado com recursos hídricos, transportes metropolitanos ou obras em áreas de divisa.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Divisão de tarefas</h3>
+                                <p>Permite a divisão de tarefas entre governos vizinhos, de modo que a união sirva para somar esforços em prol de um objetivo comum ou para distribuir atividades para os que têm melhor condição de excercê-la.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Projetos de Desenvolvimento Regional</h3>
+                                <p>Permite a alavancagem de atividades e setores que terão efeito agregado para todos os governos locais envolvidos.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -251,19 +268,22 @@
                 <div class="col-md-12">
                     <div class="separator">
                         <img src="img/logo-ade.svg" alt="Arranjo de Desenvolvimento da Educação">
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
+    <!-- ratification by MEC -->
     <section class="ratification">
         <div class="container">
             <div class="row">
 
-                <h1 class="title">Homologação pelo MEC</h1>
+                <div class="col-md-12 wow fadeInDown" data-wow-offset="270">
+                    <h1 class="title">Homologação pelo MEC</h1>
+                </div>
 
-                <div class="col-md-8">
+                <div class="col-xs-12 col-sm-7 col-md-8 ra-left wow fadeInLeftBig" data-wow-offset="275">
 
                     <p>Em 22 de Novembro de 2011, o etnão ministro de Educação, Fernando Haddad homologou o parecer do Conselho Nacional de Educação sobre a criação de Arranjos de Desenvolvimento da Educação.</p>
                     <a href="" target="_blank">Veja aqui a notícia completa</a>
@@ -305,21 +325,22 @@
                     </ul>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-5 col-md-4 wow fadeInRight" data-wow-offset="280">
                     <div class="img-document">
-                        <img src="img/document.png" alt="Homologação pelo MEC">
-                        <img src="img/selo.png" alt="Conselho Nacional de Educação">
-                        <a href="" class="btn btn-success">Download da Resolução</a>
+                        <img class="selo" src="img/selo.png" alt="Conselho Nacional de Educação">
+                        <img src="img/document.png" alt="Homologação pelo MEC">                        
+                        <a href="" class="btn btn-success wow zoomIn" data-wow-offset="150">Download da Resolução</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- how to deploy a "ADE" -->
     <section class="implant-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 wow fadeInDown" data-wow-offset="280">
 
                     <h1 class="title">Como Implantar um Arranjo</h1>
                     <h2 class="subtitle">Entenda a Metodologia de Implantação e os fatores necessários para a criação de Arranjos de Desenvolvimento da Educação de sucesso</h2>
@@ -329,21 +350,24 @@
         </div>
     </section>
 
+    <!-- basic footer -->
     <footer class="footer-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="copyright pull-left">© Meritt 2014</h3> </div>
-                    <div class="go-top pull-right"><a href="#">Topo <span class="glyphicon glyphicon-chevron-up"></span></a></div>
+                    <div class="copyright pull-left">© Meritt 2014</h3>
+                    </div>
+                    <div class="go-top pull-right"><a href="#">Topo <span class="glyphicon glyphicon-chevron-up"></span></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
