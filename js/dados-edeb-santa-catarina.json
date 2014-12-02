@@ -1,0 +1,122 @@
+{
+    "municipio": [{
+        "id": 1,
+
+        "titulo": [{
+            "nome": "Abdon Batista",
+            "escolas": "03 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.98,
+            "aprendizado": 5.67
+        }],
+
+        "situacao": [{
+            "alerta": 11,
+            "atencao": 12,
+            "melhorar": 54,
+            "manter": 32
+        }]
+    }],
+    "municipio": [{
+        "id": 2,
+
+        "titulo": [{
+            "nome": "Agrolândia",
+            "escolas": "06 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.88,
+            "aprendizado": 5.47
+        }],
+
+        "situacao": [{
+            "alerta": 18,
+            "atencao": 22,
+            "melhorar": 66,
+            "manter": 55
+        }]
+    }],
+    "municipio": [{
+        "id": 3,
+
+        "titulo": [{
+            "nome": "Águas Mornas",
+            "escolas": "11 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.78,
+            "aprendizado": 4.67
+        }],
+
+        "situacao": [{
+            "alerta": 22,
+            "atencao": 33,
+            "melhorar": 44,
+            "manter": 35
+        }]
+    }],
+    "municipio": [{
+        "id": 4,
+
+        "titulo": [{
+            "nome": "Água Doce",
+            "escolas": "05 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.77,
+            "aprendizado": 7.67
+        }],
+
+        "situacao": [{
+            "alerta": 22,
+            "atencao": 44,
+            "melhorar": 54,
+            "manter": 52
+        }]
+    }],
+    "municipio": [{
+        "id": 5,
+
+        "titulo": [{
+            "nome": "Aberlado Luz",
+            "escolas": "12 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.78,
+            "aprendizado": 8.67
+        }],
+
+        "situacao": [{
+            "alerta": 21,
+            "atencao": 32,
+            "melhorar": 54,
+            "manter": 52
+        }]
+    }],
+    "municipio": [{
+        "id": 6,
+
+        "titulo": [{
+            "nome": "Adebaran",
+            "escolas": "12 escolas"
+        }],
+
+        "fxa": [{
+            "fluxo": 0.78,
+            "aprendizado": 5.87
+        }],
+
+        "situacao": [{
+            "alerta": 18,
+            "atencao": 42,
+            "melhorar": 24,
+            "manter": 32
+        }]
+    }]
+}
