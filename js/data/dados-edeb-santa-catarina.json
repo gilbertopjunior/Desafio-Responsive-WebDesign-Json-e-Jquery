@@ -12,7 +12,7 @@
 
     }, {
         "id": 2,
-        "nome": "Agrolândia",
+        "nome": "AgrolÃ¢ndia",
         "escolas": "06 escolas",
         "fluxo": 0.88,
         "aprendizado": 5.47,
@@ -23,7 +23,7 @@
 
     }, {
         "id": 3,
-        "nome": "Águas Mornas",
+        "nome": "Ãguas Mornas",
         "escolas": "11 escolas",
         "fluxo": 0.78,
         "aprendizado": 4.67,
@@ -34,7 +34,7 @@
 
     }, {
         "id": 4,
-        "nome": "Água Doce",
+        "nome": "Ãgua Doce",
         "escolas": "05 escolas",
         "fluxo": 0.77,
         "aprendizado": 7.67,

@@ -372,13 +372,16 @@ img {
         font-size: 1em;
         font-family: @lucidaBold;
         .title-table {
-            padding: 20px 0 0 10px;
+            padding-top: 17px;
+        }
+        .title-table.pull-left {
+            padding-left: 8px;
         }
         .search-mu {
             position: relative;
-            margin: 12px 15px 0 0;
+            margin: 10px 15px 0 0;
             input {
-                padding: 0 50px 0 30px;
+                padding: 0 10px 0 30px;
                 font-size: 0.875em;
             }
             span {
@@ -391,6 +394,7 @@ img {
     tr.situation {
         td {
             font-size: 0.845em;
+            font-family: @lucidaBold;
             text-align: center;
             color: #222;
         }
@@ -400,7 +404,13 @@ img {
         color: #444;
         &:first-child {
             text-align: left;
-            padding-left: 20px;
+            padding-left: 15px;
+        }
+    }
+    .new-line {
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     .nome-escola {
@@ -410,6 +420,37 @@ img {
     .fxa {
         margin-top: 12px;
         font-size: 1.063em;
+    }
+    /*Css Easy Pie Chart - Edit*/
+    
+    .yellow {
+        color: #ffd614;
+    }
+    .orange {
+        color: #fd8317;
+    }
+    .green {
+        color: #b8df26;
+    }
+    .blue {
+        color: #34a1de;
+    }
+    .ln-char {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .chart {
+        position: relative;
+        text-align: center;
+    }
+    .chart .percent {
+        position: absolute;
+        left: 34%;
+        line-height: 77px;
+        font-family: @lucidaBold;
+        &:after {
+            content: "%";
+        }
     }
 }
 /* --------------------- Footer --------------------- */
