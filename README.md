@@ -4,11 +4,11 @@
 
 <h2> Descrição do desafio: </h2>
 
-<h3> Página temática </h3>
+<h3> - Página temática </h3>
 
 <p> O primeiro desafio é a construção de uma página temática. O objetivo deste exercício é conhecermos suas habilidades com HTML, CSS e de construção de landing pages. </p>
 
-<h3> Tabela </h3>
+<h3> - Página Tabela </h3>
 
 <p> O objetivo desta página é conhecermos suas habilidades com CSS, HTML e pequenas interações javascripts. </p>
 
