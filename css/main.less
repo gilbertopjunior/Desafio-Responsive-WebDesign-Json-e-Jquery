@@ -29,6 +29,11 @@ Author:Gilberto */
     -moz-box-shadow: @arguments;
     box-shadow: @arguments;
 }
+.rounded(@radius: 2px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
 @lucida: 'lucida_sansregular', sans-serif;
 @lucidaBold: 'lucida_sansdemibold_roman', sans-serif;
 @glyphi: 'Glyphicons Halflings';
@@ -84,6 +89,9 @@ img {
         background-color: #fff;
         border: solid 8px #fff;
     }
+}
+.txt-center {
+    text-align: center;
 }
 /* --------------------- Header --------------------- */
 
@@ -211,25 +219,34 @@ img {
         span {
             color: #666;
         }
-        h1 {
+        h2 {
             margin-top: 5px;
             margin-bottom: 40px;
         }
     }
     .details-book {
-        font-size: 0.875em;
         i {
             margin-top: 15px;
             display: block;
             padding-right: 13px;
+            font-size: 0.875em;
         }
         p {
             margin: 15px 0;
             font-size: 1em;
         }
         a {
-            width: 100%;
+            width: 97%;
         }
+    }
+    .img-book {
+        background-color: #D7D7D7;
+        width: 97%;
+        height: 295px;
+        display: block;
+        .rounded(3px);
+        .box-shadow(4px 4px 0px 0px rgba(50, 50, 50, 0.3));
+        margin: 25px 0 15px 0;
     }
     .list-collaboration-alert {
         padding-bottom: 20px;
@@ -249,6 +266,9 @@ img {
         }
         h4, p {
             padding-left: 28px;
+        }
+        p {
+            font-size: 0.875em;
         }
     }
     .list-collaboration-alert > div:before {
@@ -284,15 +304,27 @@ img {
         }
     }
     .img-document {
+        background-color: #D7D7D7;
+        width: 75%;
+        height: 310px;
+        display: block;
+        .rounded(3px);
+        .box-shadow(4px 4px 0px 0px rgba(50, 50, 50, 0.3));
+        margin: 40px auto 0px;
         text-align: center;
         .selo {
             position: absolute;
-            margin: 66px 0 0 -40px;
+            margin: 66px 0 0 -150px;
+            width: 120px;
+            height: 85px;
+            background-color: #AAA;
+            .rounded(4px);
         }
     }
     .btn {
-        width: 80%;
-        margin-top: 20px;
+        width: 75%;
+        margin: 30px auto 0px;
+        display: block;
     }
     .list-resolution {
         border-left: 12px solid #0099CC;
@@ -309,7 +341,7 @@ img {
 /*how to deploy a "ADE*/
 
 .implant-container {
-    background: url('../img/gray-noise.gif');
+    background: #eee;
     border: 1px solid #e3e3e3;
     padding: 20px 0 47px 0;
     margin-top: 50px;
@@ -321,7 +353,7 @@ img {
 /*Pag - Desafio 02 */
 
 .title-container {
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
     h1 {
         font-family: @lucidaBold;
     }
@@ -335,6 +367,50 @@ img {
 }
 #table-ideb {
     border-left: 5px solid #BBB;
+    margin-bottom: 35px;
+    th {
+        font-size: 1em;
+        font-family: @lucidaBold;
+        .title-table {
+            padding: 20px 0 0 10px;
+        }
+        .search-mu {
+            position: relative;
+            margin: 12px 15px 0 0;
+            input {
+                padding: 0 50px 0 30px;
+                font-size: 0.875em;
+            }
+            span {
+                position: absolute;
+                margin: 9px 0 0 10px;
+                color: #999;
+            }
+        }
+    }
+    tr.situation {
+        td {
+            font-size: 0.845em;
+            text-align: center;
+            color: #222;
+        }
+    }
+    td {
+        text-align: center;
+        color: #444;
+        &:first-child {
+            text-align: left;
+            padding-left: 20px;
+        }
+    }
+    .nome-escola {
+        font-size: 1.125em;
+        font-family: @lucidaBold;
+    }
+    .fxa {
+        margin-top: 12px;
+        font-size: 1.063em;
+    }
 }
 /* --------------------- Footer --------------------- */
 
