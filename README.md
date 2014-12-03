@@ -19,8 +19,8 @@
 <p> Para um acesso mais rápido e teste eu criei um link em um servidor pessoal.</p>
 
 <ul>
-  <li> <b> Desafio 01:  </b> <a href="104.131.165.126/desafio-meritt/desafio01.html" target="_blank"> 104.131.165.126/desafio-meritt/desafio01.html </a> </li>
-  <li> <b> Desafio 02:  </b> <a href="104.131.165.126/desafio-meritt/desafio02.html" target="_blank"> 104.131.165.126/desafio-meritt/desafio02.html </a> </li>
+  <li> <b> Desafio 01:  </b> <a href="http://104.131.165.126/desafio-meritt/desafio01.html" target="_blank"> http://104.131.165.126/desafio-meritt/desafio01.html </a> </li>
+  <li> <b> Desafio 02:  </b> <a href="http://104.131.165.126/desafio-meritt/desafio02.html" target="_blank"> http://104.131.165.126/desafio-meritt/desafio02.html </a> </li>
 </ul>
 
 <h2> Estrutura: </h2>
