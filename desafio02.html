@@ -38,7 +38,7 @@
                 </button>
 
 
-                <a class="logo" href="arranjos-desenvolvimento-educacao.html">
+                <a class="logo" href="#">
                     <img src="img/logo-qdata.svg" alt="Arranjo de Desenvolvimento da Educação">
                 </a>
 
@@ -86,37 +86,40 @@
         <div class="table-responsive">
             <table id="table-ideb" class="table table-bordered">
 
-                <th rowspan="2">
-                    <div class="title-table pull-left">
-                        Municípios de A a Z
-                    </div>
-                    <div class="search-mu pull-right">
-                        <input type="text" class="form-control" placeholder="Buscar municípios">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </div>
-                </th>
+                <thead>
 
-                <th rowspan="2">
-                    <div class="title-table txt-center">
-                        Fluxo x Aprendizado = Ideb
-                    </div>
-                </th>
+                    <th rowspan="2">
+                        <div class="title-table pull-left">
+                            Municípios de A a Z
+                        </div>
+                        <div class="search-mu pull-right">
+                            <input id="searchIdeb" type="text" class="form-control" placeholder="Buscar municípios">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </th>
 
-                <th colspan="4">
-                    <div class="txt-center">
-                        Situação das escolas
-                    </div>
-                </th>
+                    <th rowspan="2">
+                        <div class="title-table txt-center">
+                            Fluxo x Aprendizado = Ideb
+                        </div>
+                    </th>
 
-                <tr class="situation">
-                    <td>Alerta</td>
-                    <td>Atenção</td>
-                    <td>Melhorar</td>
-                    <td>Manter</td>
-                </tr>
+                    <th colspan="4">
+                        <div class="txt-center">
+                            Situação das escolas
+                        </div>
+                    </th>
+                    <tr class="situation">
+                        <th>Alerta</th>
+                        <th>Atenção</th>
+                        <th>Melhorar</th>
+                        <th>Manter</th>
+                    </tr>
 
-                <!-- Conteudo json sera inserido aqui -->
-
+                </thead>
+                <tbody>
+                    <!-- Conteudo json sera inserido aqui -->
+                </tbody>
             </table>
         </div>
     </div>
